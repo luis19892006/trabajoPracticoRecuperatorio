@@ -1,0 +1,321 @@
+
+/* HEADER */
+
+
+:root {
+    --purple: #5b2dff;
+    --text: #1d1d1f;
+    --muted: #d9d9de;
+    --bg: #ffffff;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+}
+
+
+.header {
+    background: var(--bg);
+    border-bottom: 1px solid #efeff3;
+    }
+
+    .header-interno {
+    /* Contenedor centrado */
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* Espaciado del header */
+    padding: 12px 20px;
+
+    /* Layout principal */
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    }
+
+    /* Logo */
+    .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    }
+
+    .logo-img {
+    height: 30px;
+    width: auto;
+    display: block;
+    }
+
+    /* Navegación (centro) */
+    .nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    /* Para que quede al centro visualmente */
+    margin-left: 18px;
+    flex: 1; 
+    }
+
+    .nav-link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap; 
+    }
+
+    .nav-link:hover {
+    text-decoration: underline;
+    }
+
+    /* Separador vertical */
+    .divider {
+    width: 1px;
+    height: 26px;
+    background: var(--muted);
+    }
+
+    /* Botones derecha */
+    .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+
+    /* Botón base */
+    .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 34px;
+    padding: 0 18px;
+
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    }
+
+    /* Botón outlined */
+    .btn-outline {
+    color: var(--purple);
+    border: 1.5px solid var(--purple);
+    background: transparent;
+    }
+
+    /* Botón fill */
+    .btn-fill {
+    color: #fff;
+    background: var(--purple);
+    border: 1.5px solid var(--purple);
+    }
+
+    
+    
+    
+
+    
+    @media (max-width: 900px) {
+    .header-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
+    .nav {
+        flex: 1 1 100%;
+        margin-left: 0;
+        justify-content: center;
+        gap: 18px;
+        padding-top: 6px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .actions {
+        width: 100%;
+        justify-content: center;
+        padding-top: 8px;
+        flex-wrap: wrap;
+    }
+    }
+
+    
+    @media (max-width: 520px) {
+    .nav {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .btn {
+        height: 36px;
+        padding: 0 16px;
+    }
+    }
+
+    /*
+    SECCION BENEFICIOS */
+
+    .beneficios {
+    background: #f7f7fb; 
+    padding: 40px 0;
+    font-family: Arial, sans-serif; 
+    }
+
+    .contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    /* Titulo */
+    .beneficios-titulo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+    }
+
+    /* 
+    CARDS 
+    */
+
+    .cards {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    }
+
+    .card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 26px 22px;
+    flex: 1;              /* las 3 ocupan el espacio */
+    max-width: 320px;     /* para que no se estiren demasiado */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    /* cuadradito del icono */
+    .card-icono {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    background: #f0eaff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: var(--purple);
+    }
+
+    .card-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin: 0 0 10px;
+    }
+
+    .card-texto {
+    margin: 0;
+    color: #6b6b75;
+    font-size: 14px;
+    line-height: 1.4;
+    }
+
+    /* 
+    VIOLETA  */
+
+    .violeta {
+    margin-top: 26px;
+    background: #3b137a; /* violeta */
+    border-radius: 20px;
+    padding: 26px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    }
+
+    .violeta-titulo {
+    margin: 0 0 6px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    }
+
+    .violeta-sub {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.95;
+    }
+
+    /* Botón blanco dentro del violeta*/
+    .violeta-btn {
+    background: #ffffff;
+    color: #3b137a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    padding: 10px 22px;
+    border-radius: 999px;
+    display: inline-block;
+    white-space: nowrap;
+    }
+
+    /* =========================
+    RESPONSIVE (tablet)
+    ========================= */
+
+    @media (max-width: 900px) {
+    .cards {
+        flex-wrap: wrap;     /* permite que bajen */
+    }
+
+    .card {
+        max-width: 360px;
+        flex: 1 1 320px;     /* mínimo 320px, si no entra baja */
+    }
+    }
+
+    /* =========================
+    RESPONSIVE (mobile)
+    ========================= */
+
+    @media (max-width: 600px) {
+    .beneficios-titulo {
+        font-size: 24px;
+    }
+
+    /* Cards una abajo de otra */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Banner en columna (texto arriba, botón abajo) */
+    .violeta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .violeta-btn {
+        width: 100%;
+        text-align: center;
+    }
+    }
+
