@@ -158,15 +158,52 @@
 
         
         @media (max-width: 520px) {
-        .nav {
-            flex-wrap: wrap;
-            row-gap: 10px;
-        }
+        /* Barra */
+            .top {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            }
 
-        .btn {
-            height: 36px;
-            padding: 0 16px;
-        }
+            /* Contenido alineado */
+            .top-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 14px 16px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* izquierda y derecha */
+            }
+
+            /* Hamburguesa */
+            .menu {
+            background: transparent;
+            border: 0;
+            padding: 10px;
+            cursor: pointer;
+            }
+
+            .menu span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #222;
+            margin: 4px 0;
+            border-radius: 2px;
+            }
+
+            /* Logo */
+            .logo img {
+            height: 28px;
+            width: auto;
+            display: block;
+            }
+
+            .header-interno{
+                display: none;
+
+            }
+
         }
 
         /*
@@ -291,6 +328,7 @@
         .cards {
             flex-wrap: wrap;     /* permite que bajen */
         }
+
 
         .card {
             max-width: 360px;
@@ -453,6 +491,12 @@
         width: 200px;
     }
     }
+    @media (min-width: 600px) {
+    .top {
+        display: none;
+    }
+    }
+
 
     /* footer */
 
