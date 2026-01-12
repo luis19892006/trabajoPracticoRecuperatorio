@@ -111,6 +111,17 @@
         color: #fff;
         background: var(--purple);
         border: 1.5px solid var(--purple);
+        padding: 6px 24px;
+        border-radius: 50px;
+        margin: 0 4px;
+        font-weight: 600;
+        }
+
+        .btn-outline:hover,.btn-fill:hover{
+            background-color: #e4d7ff;
+            border: 1px solid #360c72;
+            cursor: pointer;
+            
         }
 
         
@@ -347,9 +358,9 @@
     margin: 8px 0 30px;
     }
 
-    /* =========================
-    ITEMS (desktop)
-    ========================= */
+    /* 
+    ITEMS 
+        */
 
     .item {
     display: flex;
@@ -373,17 +384,17 @@
     }
 
     .item-titulo {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0 0 8px;
     color: #1d1d1f;
     }
 
     .item-desc {
-    font-size: 12px;
+    font-size: 14px;
     color: #6b6b75;
     margin: 0 0 14px;
-    line-height: 1.4;
+    line-height: 1.6;
     }
 
     /* Botón violeta */
@@ -393,7 +404,7 @@
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
 
     padding: 10px 32px;
     border-radius: 50px;
@@ -408,7 +419,7 @@
     }
 
     .item-img img {
-    width: 220px;
+    width: 280px;
     max-width: 100%;
     height: auto;
     }
@@ -442,3 +453,56 @@
         width: 200px;
     }
     }
+
+    /* footer */
+
+    .pie-de-pagina {
+
+    display: flex;            
+    justify-content: flex-start;
+    gap: 80px; 
+    padding: 40px;           
+    font-family: sans-serif;
+    align-items: flex-start; 
+    }
+
+    /* Esto controla cada columna individual */
+    .columna {
+    display: flex;
+    flex-direction: column;  
+    padding-top: 60px;
+    position: relative;
+    }
+
+    /* Estilo para los títulos (Nave, Medios de cobro, etc.) */
+    h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 60px;    
+    }
+
+    /* Estilo para la lista de enlaces */
+    ul {
+    list-style: none;        
+    padding: 0;       
+    margin: 0;
+    }
+
+    li {
+    margin-bottom: 10px;     
+    color: #666;           
+    cursor: pointer;
+    }         
+
+    .columna:not(:first-child) {
+  padding-top: 40px; /* ajustá según el alto del logo */
+}
+
+.columna_derecha {
+  margin-left: 120px; /* ajustá 100–150px según lo necesites */
+}
+.texto_footer4{
+    margin-top: 30px;
+    
+
+}
